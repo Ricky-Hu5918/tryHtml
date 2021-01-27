@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table_Tag</title>
+</head>
+<body>
+    <h3>畅销小说排行榜</h3>
+    <table border="1" cellpadding="0" cellspacing="0"  width="600" >
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>关键词</th>
+                <th>趋势</th>
+                <th>今日搜索</th>
+                <th>最近七日</th>
+                <th>相关链接</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>鬼吹灯</td>
+                <td><img src="images/down.png" width="40"></td>
+                <td>345</td>
+                <td>123</td>
+                <td><a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E9%AC%BC%E5%90%B9%E7%81%AF&fr=search">贴吧</a> &nbsp; <a href="https://tieba.baidu.com/f?kw=%E9%AC%BC%E5%90%B9%E7%81%AF&ie=utf-8&tab=album">图片</a> &nbsp; <a href="https://baike.baidu.com/item/%E9%AC%BC%E5%90%B9%E7%81%AF%E4%B9%8B%E7%B2%BE%E7%BB%9D%E5%8F%A4%E5%9F%8E/19171105?fromtitle=%E9%AC%BC%E5%90%B9%E7%81%AF&fromid=16401918">百科</a></td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>盗墓笔记</td>
+                <td><img src="images/down.png" width="40"></td>
+                <td>124</td>
+                <td>675123</td>
+                <td><a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0&fr=search">贴吧</a> &nbsp; <a href="https://tieba.baidu.com/f?kw=%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0&ie=utf-8&tab=album">图片</a> &nbsp; <a href="https://baike.baidu.com/item/%E7%9B%97%E5%A2%93%E7%AC%94%E8%AE%B0/21859">百科</a></td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>西游记</td>
+                <td><img src="images/up.png" width="40"></td>
+                <td>345</td>
+                <td>123</td>
+                <td><a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E8%A5%BF%E6%B8%B8%E8%AE%B0&fr=search">贴吧</a> &nbsp; <a href="https://tieba.baidu.com/f?kw=%E8%A5%BF%E6%B8%B8%E8%AE%B0&ie=utf-8&tab=album">图片</a> &nbsp; <a href="#">百科</a></td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>东游记</td>
+                <td><img src="images/down.png" width="40"></td>
+                <td>3345</td>
+                <td>98123</td>
+                <td><a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E4%B8%9C%E6%B8%B8%E8%AE%B0&fr=search">贴吧</a> &nbsp; <a href="https://tieba.baidu.com/f?kw=%E4%B8%9C%E6%B8%B8%E8%AE%B0&ie=utf-8&tab=album">图片</a> &nbsp; <a href="#">百科</a></td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>甄嬛传</td>
+                <td><img src="images/up.png" width="40"></td>
+                <td>2345</td>
+                <td>958123</td>
+                <td><a href="https://tieba.baidu.com/f?ie=utf-8&kw=%E7%94%84%E5%AC%9B%E4%BC%A0&fr=search">贴吧</a> &nbsp; <a href="https://tieba.baidu.com/f?kw=%E5%90%8E%E5%AE%AB%E7%94%84%E5%AC%9B%E4%BC%A0%E7%94%B5%E8%A7%86%E5%89%A7&ie=utf-8&tab=album">图片</a> &nbsp; <a href="https://baike.baidu.com/item/%E7%94%84%E5%AC%9B%E4%BC%A0/4701562?fr=aladdin">百科</a></td>
+            </tr>
+        </tbody>    
+    </table>
+
+    <br />
+    <br />
+    <br />
+    
+
+    <!-- 下面的代码展示如何合并单元格！ -->
+    <h3>合并表格</h3>
+    <table border="1" cellspacing="0" width="600">
+        <thead>
+            <tr>
+                <th>1</th>
+                <!-- 合并首行的第二和第三列 -->
+                <th colspan="2">2</th>  
+                
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>4</td>
+                <!-- 合并第二列的第三和第四行 -->
+                <td rowspan="2">5</td>
+                <td>6</td>
+            </tr>
+        
+            <tr>
+                <td>7</td>
+
+                <td>9</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>
