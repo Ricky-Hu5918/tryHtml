@@ -1,0 +1,158 @@
+<!-- 制作一个form表单，使用表格table标签进行布局，同时使用了input，select，textarea，label，无序列表等标签 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h2>青春不常在，赶紧谈恋爱！</h2>
+    <form action="/action_page.php">
+        <table>
+            <tr>
+                <td>性别</td>
+                <td>
+                    <form>
+                        <!-- 加入label标签，让用户点击文字也能选中 -->
+                        <input type="radio" name="sex" id="sex1" /> <label for="sex1">男</label>
+                        <input type="radio" name="sex" id="sex2"/> <label for="sex2">女</label>
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>生日</td>
+                <td>
+                    <select name="birthday">
+                        <option selected="selected">请选择年</option>
+                        <option value="1980"> &lt;1990</option>
+                        <option value="1990">1990-1995</option>
+                        <option value="1991">1996-2000</option>
+                        <option value="1992">2001-2005</option>
+                    </select>
+                    <select name="birthday">
+                        <option selected="selected">请选择月</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select name="birthday">
+                        <option selected="selected">请选择日</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>所在地区</td>
+                <td><input type="text" /></td>
+            </tr>
+
+            <tr>
+                <td>婚姻状况</td>
+                <td>
+                    <!-- 加入label标签，让用户点击文字也能选中 -->
+                    <input type="radio" name="marriage" id="no"/> <label for="no">未婚</label>
+                    <input type="radio" name="marriage" id="yes"/> <label for="yes">已婚</label>
+                    <input type="radio" name="marriage" id="yes-no"/> <label for="yes-no">离异</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>学历</td>
+                <td><input type="text"/></td>
+            </tr>
+
+            <tr>
+                <td>喜欢的类型</td>
+                <td>
+                    <input type="checkbox" id="1"/> <label for="1">妩媚的</label>
+                    <input type="checkbox" id="2"/> <label for="2">可爱的</label>
+                    <input type="checkbox" id="3"/> <label for="3">小鲜肉</label>
+                    <input type="checkbox" id="4"/> <label for="4">老腊肉</label>
+                    <input type="checkbox" id="5"/> <label for="5">都喜欢</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>自我介绍</td>
+                <td><textarea cols="50" rows="5"></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="免费注册"/>
+                    <input type="reset" value="重新填写"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" id="agree"/> <label for="agree">我同意注册条款和会员加入标准</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <a href="#" >我是会员，立即登录</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <h2>我承诺</h2>
+                    <ul>
+                        <li>年满18周岁</li>
+                        <li>抱着严肃的态度</li>
+                        <li>真诚寻找另一半</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
