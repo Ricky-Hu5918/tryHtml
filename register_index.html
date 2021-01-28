@@ -9,14 +9,14 @@
 <body>
     <h2>青春不常在，赶紧谈恋爱！</h2>
     <form action="/action_page.php">
-        <table>
+        <table width="600">
             <tr>
                 <td>性别</td>
                 <td>
                     <form>
                         <!-- 加入label标签，让用户点击文字也能选中 -->
-                        <input type="radio" name="sex" id="sex1" /> <label for="sex1">男</label>
-                        <input type="radio" name="sex" id="sex2"/> <label for="sex2">女</label>
+                        <input type="radio" name="sex" id="sex1" /> <label for="sex1"><img src="images/man-2.png" height="15"/>男</label>
+                        <input type="radio" name="sex" id="sex2" checked="checked"/> <label for="sex2"><img src="images/woman-2.png" height="15"/>女</label>
                     </form>
                 </td>
             </tr>
@@ -25,14 +25,14 @@
                 <td>生日</td>
                 <td>
                     <select name="birthday">
-                        <option selected="selected">请选择年</option>
+                        <option selected="selected">--请选择年--</option>
                         <option value="1980"> &lt;1990</option>
                         <option value="1990">1990-1995</option>
                         <option value="1991">1996-2000</option>
                         <option value="1992">2001-2005</option>
                     </select>
                     <select name="birthday">
-                        <option selected="selected">请选择月</option>
+                        <option selected="selected">--请选择月--</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -47,7 +47,7 @@
                         <option value="12">12</option>
                     </select>
                     <select name="birthday">
-                        <option selected="selected">请选择日</option>
+                        <option selected="selected">--请选择日--</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -85,14 +85,15 @@
 
             <tr>
                 <td>所在地区</td>
-                <td><input type="text" /></td>
+                <td><input type="text" value="北京"/></td>
             </tr>
 
             <tr>
                 <td>婚姻状况</td>
                 <td>
                     <!-- 加入label标签，让用户点击文字也能选中 -->
-                    <input type="radio" name="marriage" id="no"/> <label for="no">未婚</label>
+                    <!-- 添加checked属性，展示默认选中项 -->
+                    <input type="radio" name="marriage" id="no" checked="checked"/> <label for="no">未婚</label>
                     <input type="radio" name="marriage" id="yes"/> <label for="yes">已婚</label>
                     <input type="radio" name="marriage" id="yes-no"/> <label for="yes-no">离异</label>
                 </td>
@@ -110,7 +111,7 @@
                     <input type="checkbox" id="2"/> <label for="2">可爱的</label>
                     <input type="checkbox" id="3"/> <label for="3">小鲜肉</label>
                     <input type="checkbox" id="4"/> <label for="4">老腊肉</label>
-                    <input type="checkbox" id="5"/> <label for="5">都喜欢</label>
+                    <input type="checkbox" id="5" checked="checked"/> <label for="5">都喜欢</label>
                 </td>
             </tr>
 
@@ -130,7 +131,7 @@
             <tr>
                 <td></td>
                 <td>
-                    <input type="checkbox" id="agree"/> <label for="agree">我同意注册条款和会员加入标准</label>
+                    <input type="checkbox" id="agree" checked="checked"/> <label for="agree">我同意注册条款和会员加入标准</label>
                 </td>
             </tr>
 
@@ -144,11 +145,21 @@
             <tr>
                 <td></td>
                 <td>
-                    <h2>我承诺</h2>
+                    <h3>我承诺</h3>
+                    <!-- 在list中进行列表嵌套 -->
                     <ul>
-                        <li>年满18周岁</li>
+                        <li>年满18周岁
+                            <ul>
+                                <li>至少18岁</li>
+                                <li>16岁估计不行</li>
+                            </ul>
+                        </li>
                         <li>抱着严肃的态度</li>
-                        <li>真诚寻找另一半</li>
+                        <li>真诚寻找另一半
+                            <ul>
+                                <li>必须真诚</li>
+                            </ul>
+                        </li>
                     </ul>
                 </td>
             </tr>
