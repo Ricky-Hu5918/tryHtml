@@ -1,0 +1,57 @@
+
+body {
+    font: 16px/28px "Microsoft Yahei";
+    
+}
+
+h2 {
+    /* 文字不加粗 */
+    font-weight: 400;
+
+    /* 文字水平居中 */
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+}
+
+a {
+    /* 取消超链接的下划线 */
+    text-decoration: none;
+}
+
+.search{
+    color: #666666;
+    width: 170px;
+}
+
+.search_btn {
+    font-weight: 700;
+}
+
+.fit-image {
+    /* 让图像居中显示方法一 */
+    /* width: 600px;
+    margin: 0 auto !important;
+    display: block !important; */
+
+    /* 方法二：给图片的父标签p，添加水平居中的代码 */
+    text-align: center;
+}
+
+p {
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+.warning {
+    font-style: italic;
+    color: grey;
+
+    /* 让文字右对齐 */
+    text-align: right;
+    float: right;
+}
