@@ -1,11 +1,13 @@
 <!-- 制作一个form表单，使用表格table标签进行布局，同时使用了input，select，textarea，label，无序列表等标签 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
 </head>
+
 <body>
     <h2>青春不常在，赶紧谈恋爱！</h2>
     <form action="/action_page.php">
@@ -15,8 +17,10 @@
                 <td>
                     <form>
                         <!-- 加入label标签，让用户点击文字也能选中 -->
-                        <input type="radio" name="sex" id="sex1" /> <label for="sex1"><img src="images/man-2.png" height="15"/>男</label>
-                        <input type="radio" name="sex" id="sex2" checked="checked"/> <label for="sex2"><img src="images/woman-2.png" height="15"/>女</label>
+                        <input type="radio" name="sex" id="sex1" /> <label for="sex1"><img src="images/man-2.png"
+                                height="15" />男</label>
+                        <input type="radio" name="sex" id="sex2" checked="checked" /> <label for="sex2"><img
+                                src="images/woman-2.png" height="15" />女</label>
                     </form>
                 </td>
             </tr>
@@ -85,7 +89,7 @@
 
             <tr>
                 <td>所在地区</td>
-                <td><input type="text" value="北京"/></td>
+                <td><input type="text" value="北京" /></td>
             </tr>
 
             <tr>
@@ -93,25 +97,25 @@
                 <td>
                     <!-- 加入label标签，让用户点击文字也能选中 -->
                     <!-- 添加checked属性，展示默认选中项 -->
-                    <input type="radio" name="marriage" id="no" checked="checked"/> <label for="no">未婚</label>
-                    <input type="radio" name="marriage" id="yes"/> <label for="yes">已婚</label>
-                    <input type="radio" name="marriage" id="yes-no"/> <label for="yes-no">离异</label>
+                    <input type="radio" name="marriage" id="no" checked="checked" /> <label for="no">未婚</label>
+                    <input type="radio" name="marriage" id="yes" /> <label for="yes">已婚</label>
+                    <input type="radio" name="marriage" id="yes-no" /> <label for="yes-no">离异</label>
                 </td>
             </tr>
 
             <tr>
                 <td>学历</td>
-                <td><input type="text"/></td>
+                <td><input type="text" /></td>
             </tr>
 
             <tr>
                 <td>喜欢的类型</td>
                 <td>
-                    <input type="checkbox" id="1"/> <label for="1">妩媚的</label>
-                    <input type="checkbox" id="2"/> <label for="2">可爱的</label>
-                    <input type="checkbox" id="3"/> <label for="3">小鲜肉</label>
-                    <input type="checkbox" id="4"/> <label for="4">老腊肉</label>
-                    <input type="checkbox" id="5" checked="checked"/> <label for="5">都喜欢</label>
+                    <input type="checkbox" id="1" /> <label for="1">妩媚的</label>
+                    <input type="checkbox" id="2" /> <label for="2">可爱的</label>
+                    <input type="checkbox" id="3" /> <label for="3">小鲜肉</label>
+                    <input type="checkbox" id="4" /> <label for="4">老腊肉</label>
+                    <input type="checkbox" id="5" checked="checked" /> <label for="5">都喜欢</label>
                 </td>
             </tr>
 
@@ -123,22 +127,22 @@
             <tr>
                 <td></td>
                 <td>
-                    <input type="submit" value="免费注册"/>
-                    <input type="reset" value="重新填写"/>
+                    <input type="submit" value="免费注册" />
+                    <input type="reset" value="重新填写" />
                 </td>
             </tr>
 
             <tr>
                 <td></td>
                 <td>
-                    <input type="checkbox" id="agree" checked="checked"/> <label for="agree">我同意注册条款和会员加入标准</label>
+                    <input type="checkbox" id="agree" checked="checked" /> <label for="agree">我同意注册条款和会员加入标准</label>
                 </td>
             </tr>
 
             <tr>
                 <td></td>
                 <td>
-                    <a href="#" >我是会员，立即登录</a>
+                    <a href="#">我是会员，立即登录</a>
                 </td>
             </tr>
 
@@ -166,4 +170,5 @@
         </table>
     </form>
 </body>
+
 </html>
