@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 12px tahoma,arial,Microsoft YaHei,Hiragino Sans GB,"\u5b8b\u4f53",sans-serif;
+}
+
+
+.flash_deals_left {
+    /* 设定大盒子的宽度、高度及背景颜色 */
+    width: 200px;
+    height: 266px;
+    background: #f02b2b;
+
+    /* 设定大盒子中文字的对齐方式、颜色和样式 */
+    text-align: center;
+    color: white;
+    font-style: normal;
+
+    /* 设定盒子外面上下左右各20px的间隙 */
+    margin: 20px 0 20px 20px;
+
+    /* 防止嵌套产生塌陷的三种方法 */
+    /* padding: 1px; */
+    /* border: 1px solid transparent; */
+    overflow: hidden;
+
+    position: relative;
+    float: left;
+}
+
+
+.flash_deals_left_title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 32px;
+    font-weight: 300;
+
+    /* 让这个盒子里上面一定距离，需要设定父盒子，不然会塌陷 */
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.flash_deals_left_title_en {
+    height: 28px;
+    line-height: 28px;
+    font-size: 19px;
+    font-weight: 300;
+    opacity: 0.6;
+}
+
+.flash_deals_left_icon {
+    height: 50px;
+    background: url(jd_images/flash.png) no-repeat center;
+    background-size: 35px;
+    margin: 10px 0 20px 0;
+}
+
+.flash_deals_left_timer_text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    margin: 10px 0;
+}
+
+.countdown {
+    display: flex;
+    margin-left: 33px;
+}
+
+.countdown div {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    margin: 0 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.countdown div::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 35px;
+    height: 15px;
+    /* background: #ff0; */
+    color: #333;
+    font-size: 0.2em;
+    line-height: 35px;
+    font-weight: 300;
+
+}
+
+/* .countdown div#day::before {
+    content: 'Days';
+} */
+
+.countdown div#hour::before {
+    content: 'Hours';
+}
+
+.countdown div#minute::before {
+    content: 'Minutes';
+}
+
+.countdown div#second::before {
+    content: 'Seconds';
+}
+
+.right_nav {
+    /* 设定大盒子的宽度、高度及背景颜色 */
+    width: 200px;
+    height: 266px;
+    background:white;
+
+    position: relative;
+    float: left;
+
+    /* 设定大盒子中文字的对齐方式、颜色和样式 */
+    text-align: center;
+    color: rgb(26, 16, 16);
+    font-style: normal;
+
+    /* 设定盒子外面上下左右各20px的间隙 */
+    margin: 20px 20px 20px 20px;
+
+    /* 防止嵌套产生塌陷的三种方法 */
+    /* padding: 1px; */
+    /* border: 1px solid transparent; */
+    overflow: hidden;
+
+
+}
+
+.goods_1_img {
+    /* width: 160px; */
+    height: 160px;
+}
+
+.item_info {
+    position: relative;
+    margin-top: 10px;
+}
+
+.item_info_two_lines {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.3;
+    height: 36px;    
+}
+
+.item_content_price {
+    margin-top: 5px;
+    position: relative;
+}
+
+.item_price {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Microsoft Yahei', sans-serif;
+    position: relative;
+}
+
+.item_price_left {
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    background: #f02b2b;
+    width: 50%;
+    /* width: 80px; */
+    height: 25px;
+    line-height: 25px;
+}
+
+.item_price_right {
+    box-sizing: content-box;
+    display: inline-block;
+    color: #ccc;
+    width: calc(50% - 1px);
+    /* width: 79px; */
+    text-decoration: line-through;
+    height: 23px;
+    line-height: 25px;
+    border-top: 1px solid #f02b2b;
+    border-bottom: 1px solid #f02b2b;
+    border-right: 1px solid #f02b2b;
+    margin-left: -10px;
+}
+
+.right_nav:hover {
+    background-color: rgb(208, 243, 208)
+}

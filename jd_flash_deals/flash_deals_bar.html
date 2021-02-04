@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>京东秒杀</title>
+    <link rel="stylesheet" href="flash_deals_bar.css" />
+</head>
+
+<body>
+    <div class="flash_deals_left">
+        <div class="flash_deals_left_title">京东秒杀</div>
+        <div class="flash_deals_left_title_en">FLASH DEALS</div>
+        <div class="flash_deals_left_icon"></div>
+        <div class="flash_deals_left_timer_text">距离开始时间还剩</div>
+        <div class="container">
+            <div class="countdown">
+                <div id="hour">NA</div>
+                <div id="minute">NA</div>
+                <div id="second">NA</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="right_nav" style="padding: 15px; width: 160px">
+        <div class="goods_1">
+            <a href="https://item.jd.com/100014205312.html" target="_blank"><img class="goods_1_img"
+                    src="jd_images/lenove_phone.webp" /> </a>
+        </div>
+        <div class="item_info">
+            <div class="item_info_two_lines">联想拯救者电竞手机Pro 12GB+128GB 骁龙865 Plus 双液冷散热 144Hz电竞屏 双模5G游戏手机 炫蓝冰刃</div>
+        </div>
+        <div class="item_content_price">
+            <div class="item_price">
+                <div class="item_price_left">￥3499</div>
+                <div class="item_price_right">"￥3749"</div>
+            </div>
+        </div>
+    </div>
+    <div class="right_nav" style="padding: 15px; width: 160px">
+        <div class="goods_1">
+            <a href="https://item.jd.com/100010566508.html" target="_blank"><img class="goods_1_img"
+                    src="jd_images/switch.webp" /> </a>
+        </div>
+        <div class="item_info">
+            <div class="item_info_two_lines">任天堂 Nintendo Switch 国行续航增强版红蓝主机 & 健身环大冒险 体感游戏 游戏兑换卡</div>
+        </div>
+        <div class="item_content_price">
+            <div class="item_price">
+                <div class="item_price_left">￥2398</div>
+                <div class="item_price_right">"￥2598"</div>
+            </div>
+        </div>
+    </div>
+    <div class="right_nav" style="padding: 15px; width: 160px">
+        <div class="goods_1">
+            <a href="https://item.jd.com/100011336094.html" target="_blank"><img class="goods_1_img"
+                    src="jd_images/xiaomi.webp" /> </a>
+        </div>
+        <div class="item_info">
+            <div class="item_info_two_lines">小米10 双模5G 骁龙865 1亿像素8K电影相机 对称式立体声 8GB+256GB 蜜桃金</div>
+        </div>
+        <div class="item_content_price">
+            <div class="item_price">
+                <div class="item_price_left">￥3569</div>
+                <div class="item_price_right">"￥3999"</div>
+            </div>
+        </div>
+    </div>
+    <div class="right_nav" style="padding: 15px; width: 160px">
+        <div class="goods_1">
+            <a href="https://item.jd.com/100006288361.html" target="_blank"><img class="goods_1_img"
+                    src="jd_images/tineco.webp" /> </a>
+        </div>
+        <div class="item_info">
+            <div class="item_info_two_lines">添可(TINECO)无线洗地机IFLOOR Plus家用吸尘器拖地一体机清洗电动拖把</div>
+        </div>
+        <div class="item_content_price">
+            <div class="item_price">
+                <div class="item_price_left">￥2490</div>
+                <div class="item_price_right">"￥3099"</div>
+            </div>
+        </div>
+    </div>
+    <div class="right_nav" style="padding: 15px; width: 160px">
+        <div class="goods_1">
+            <a href="https://item.jd.com/100002681752.html" target="_blank"><img class="goods_1_img"
+                    src="jd_images/dog.webp" /> </a>
+        </div>
+        <div class="item_info">
+            <div class="item_info_two_lines">盈佳智能机器狗 儿童玩具男孩故事机 百科问答早教机 小孩1-3-6岁宝宝婴儿玩具女孩编程学习机新年礼物</div>
+        </div>
+        <div class="item_content_price">
+            <div class="item_price">
+                <div class="item_price_left">￥148</div>
+                <div class="item_price_right">"￥168"</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var countDate = new Date('FEB 4, 2021 22:00:00').getTime();
+
+        function newYear() {
+            let now = new Date().getTime();
+            let gap = countDate - now;
+
+            let second = 1000;
+            let minute = second * 60;
+            let hour = minute * 60;
+            let day = hour * 24;
+
+            let d = Math.floor(gap / (day));
+            let h = Math.floor((gap % (day)) / (hour));
+            let m = Math.floor((gap % (hour)) / (minute));
+            let s = Math.floor((gap % (minute)) / (second));
+
+            // document.getElementById('day').innerText = d;
+            document.getElementById('hour').innerText = h;
+            document.getElementById('minute').innerText = m;
+            document.getElementById('second').innerText = s;
+        }
+        setInterval(() => {
+            newYear();
+        }, 1000);
+    </script>
+
+
+
+</body>
+
+</html>
