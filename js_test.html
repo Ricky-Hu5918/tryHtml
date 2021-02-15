@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //1. 求1-100之间所有数的总和和平均值
+    // var sum = 0, average = 0;
+    // for (var i = 1; i <= 100; i++) {
+    //     sum += i;
+    // }
+    // average = sum / 100;
+    // alert('1-100之间所有数的总和是: ' + sum + '. \n' + '1-100之间所有数的平均值是：' + average + '.')
+
+    //2. 求1-100之间所有偶数的和，以及100以内所有7的倍数的总和
+    // var evenSum = 0, m7Sum = 0;
+    // for (var i = 1; i <= 100; i++) {
+    //     if (i % 2 == 0) {
+    //         evenSum += i;
+    //     }
+
+    //     if (i % 7 == 0) {
+    //         m7Sum += i;
+    //     }
+    // }
+    // alert('100以内所有偶数的和为：' + evenSum + '. \n' + '100以内所有7的倍数总和为：' + m7Sum + '.')
+
+    //3. 用for循环打印矩形，要求每次输出一颗星; 用for循环打印三角形
+    //rectangle 
+    // var str = '';
+    // for (var i = 1; i <= 5; i++) {
+    //     for (var j = 1; j <= 5; j++) {
+    //         str += '※'
+    //     }
+    //     str += '\n'
+    // }
+    // console.log(str);
+
+    // //triangle
+    // for (var i = 1; i <= 5; i++) {
+    //     for (var j = 1; j <= i; j++) {
+    //         str += '※'
+    //     }
+    //     str += '\n'
+    // }
+    // console.log(str);
+
+    //4. 99乘法表
+    // var res = '';
+    // for (var i = 1; i <= 9; i++) {
+    //     for (var j = 1; j <= i; j++) {
+    //         res += j + 'X' + i + '=' + j * i + '\t';
+    //     }
+    //     res += '\n'
+    // }
+    // console.log(res);
+
+    //5. 提示用户输入用户名和密码，直到用户名为admin，密码为12345，则显示登陆成功，否则一直循环提示
+    // do {
+    //     var usrName = prompt('请输入用户名：');
+    //     var pwd = prompt('请输入密码：')
+    // } while (usrName !== 'admin' && pwd !== '12345')
+    // alert('恭喜！登陆成功......')
+
+    //6. 求100以内所有数的累加结果，但要跳过所有各位为3的数
+    // var sum = 0;
+    // for (var i = 1; i <= 100; i++) {
+    //     if (i % 10 == 3) {
+    //         console.log(i);
+    //         continue;
+    //     }
+    //     sum += i;
+    // }
+    // console.log(sum);
+
+    //7. 简易ATM
+    //显示操作菜单，当用户选择相应菜单，就执行相应操作并返回操作结果
+    var balance = 100;
+    var flag = true;
+
+    while (flag) {
+        do {
+            var action = prompt('请输入你的操作：\n' + '1. 存钱 \n' + '2. 取钱 \n' + '3. 显示余额 \n' + '4. 退出');
+        } while (action != '1' && action != '2' && action != '3' && action != '4')
+
+        switch (action) {
+            case '1':
+                do {
+                    var money = parseInt(prompt('请输入你要存入的钱数：'));
+                } while (isNaN(money))
+
+                balance += money;
+                alert('你的账户当前余额为：' + balance);
+                break;
+            case '2':
+                do {
+                    var money = parseInt(prompt('请输入你取出的钱数：'));
+                } while (isNaN(money))
+
+                if (money > balance) {
+                    alert('你的取款数量超过了当前余额，请重新输入！ ' + '\n你的账户当前余额为：' + balance);
+                } else {
+                    balance -= money;
+                    alert('你的账户当前余额为：' + balance);
+                }
+
+
+                break;
+            case '3':
+                alert('你的账户当前余额为：' + balance);
+                break;
+            case '4':
+                flag = false;
+                break;
+        }
+
+    }
+
+</script>
+
+<body>
+
+</body>
+
+</html>
