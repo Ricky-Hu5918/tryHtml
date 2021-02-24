@@ -119,6 +119,17 @@
         .login_btn:hover {
             background-color: #06b45a;
         }
+
+        #display_pwd {
+            background-color: rgb(255, 255, 255);
+        }
+
+        #clear {
+            /* 隐藏元素 */
+            display: none;
+            background-color: #06b45a;
+            border-radius: 10px;
+        }
     </style>
 </head>
 
@@ -129,11 +140,11 @@
         </div>
         <div class="login_input">
             <span><input type="text" placeholder="邮箱/QQ号/微信号" id="input_email"> </span>
-            <label for=""><img src="./images/clear.png" id="clear" /></label>
+            <label for=""><img src="./images/clear_icon.png" id="clear" /></label>
         </div>
         <div class=" login_input">
             <span><input type="password" placeholder="密码" id="pwd"> </span>
-            <label for=""><img src="./images/close.png" id="display_pwd" /></label>
+            <label for=""><img src="./images/eye_close.png" id="display_pwd" /></label>
         </div>
 
         <div class="login_help">
@@ -151,26 +162,49 @@
     <script>
         //1. 通过ID选中操作源
         var email_input = document.getElementById("input_email");
-        console.dir(email_input)
+        // console.dir(email_input) //打印输出object树
         var clear_input_email = document.getElementById("clear");
+
         //2. 给操作源指定操作事件，同时将操作函数赋值为操作事件
+        // 当clear按钮被点击时，清除文本框输入内容
         clear_input_email.onclick = function () {
             //3. 在操作函数内执行相应的操作
-            console.log("do something!");
+            // console.log("do something!");
             email_input.value = "";
+            // this.src = "./images/clear_icon.png"  //也可更换其图标
+
+            // 点击clear图标后，恢复其原始状态
+            // this.style.backgroundColor = "#ffffff";
+            // this.style.borderRadius = "0px";
+            // 点击clear图标后，恢复隐藏clear按钮
+            this.style.display = 'none';
         }
 
+
+        email_input.oninput = function () {
+            // console.log("start to input");
+            // clear_input_email.src = "./images/clear.png"; //也可更换其图标
+
+            // 当文本框有内容输入时，改变clear按钮的背景色和形状
+            // clear_input_email.style.backgroundColor = "#06b45a";
+            // clear_input_email.style.borderRadius = "10px";
+
+            // 当文本框有内容输入时，显示clear按钮
+            clear_input_email.style.display = "inline-block";
+        }
+
+        //通过点击眼睛图标，切换“显示/隐藏”密码
         var pwd = document.getElementById("pwd");
         var display_pwd = document.getElementById("display_pwd");
         var flag = 0;
         display_pwd.onclick = function () {
             if (flag == 0) {
                 pwd.type = "text";
-                display_pwd.src = "./images/open.png";
+                display_pwd.src = "./images/eye_open.png";
                 flag = 1;
             } else {
                 pwd.type = "password";
-                display_pwd.src = "./images/close.png";
+                display_pwd.src = "./images/eye_close.png";
                 flag = 0;
             }
 
